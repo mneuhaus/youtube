@@ -22,6 +22,11 @@ return [
 	 * Example: 'admin', would prefix the below routes with 'http://domain.com/admin/'
 	 */
 	'route_base_uri' => '',
+	
+	/**
+	 * Redirect after callback
+	 */
+	 'redirect_after' => '/home',
 
 	/**
 	 * Redirect URI, this does not include your TLD.
