@@ -45,6 +45,7 @@ class Youtube {
 	public function saveAccessTokenToDB($accessToken)
 	{
 		$data = [
+			'user_id' => $this->app->auth->user()->id,
 			'access_token' => $accessToken,
 			'created_at' => Carbon::now(),
 		];
@@ -58,6 +59,7 @@ class Youtube {
 	public function getLatestAccessTokenFromDB()
 	{
 		$latest = DB::table('youtube_access_tokens')
+				->where('user_id', $this->app->auth->user()->id)
 				->orderBy('created_at', 'desc')
 				->first();
 
