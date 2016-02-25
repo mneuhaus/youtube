@@ -23,7 +23,7 @@ Route::group(['prefix' => config('youtube.route_base_uri')], function() {
 			Youtube::saveAccessTokenToDB($token);
 		}
 
-		return redirect('/');
+		return redirect(config('youtube.redirect_after'));
 
 	});
 
