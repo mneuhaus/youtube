@@ -1,5 +1,5 @@
 {
-    "name": "rbilash/youtube",
+    "name": "dawson/youtube",
     "description": "Upload a video to YouTube with Laravel 5.",
     "license": "MIT",
     "authors": [
@@ -18,5 +18,5 @@
             "Dawson\\Youtube": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
